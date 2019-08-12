@@ -1,0 +1,9 @@
+#ifndef SUFFIXTREE_H
+#define SUFFIXTREE_H
+
+class SuffixTree {
+ public:
+ private:
+};
+
+#endif

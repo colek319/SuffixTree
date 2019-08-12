@@ -1,0 +1,44 @@
+Suffix Array:
+	Constructor takes a string and constructs a suffix
+    array.
+    Second constructor that just takes a suffix tree?
+
+Suffix Tree (Ukkonens algorithm, but mention weiner):
+	Constructor that takes a string and constructs
+    a suffix tree
+
+	extension: construct tree of multiple strings
+
+
+
+Pseudocode:
+
+	1. Construct tree I_1
+    2. For i from 1 to m - 1 do
+    3. begin phase {i + 1}
+    4.     For j from 1 to i + 1
+    5.         begin extension j 
+    6. 		   find the end of the path labeled S[j..i] in the
+    		   current tree. If needed, extend that path by
+               adding character S(i + 1), thus assuring that
+               string S[j..i + 1] is in the tree
+    7. 		end
+    8. end
+
+	We will speed up the above algorithm by applying suffix
+    links, and speed up tricks 1, 2, and 3.
+
+	Suffix links:
+    	For vertex v with path label xw, there is a
+        corresponding vertex s(v) with a path label
+        that is a prefix of w. 
+
+	Trick 1: edge skipping when the length of alpha
+    		 is bigger than the length of an edge. we
+             dont need to look at all characters, just
+             check the first and length, and skip it.
+
+	Trick 2:
+
+	Trick 3:
+    	

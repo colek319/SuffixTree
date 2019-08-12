@@ -1,0 +1,9 @@
+#ifndef SUFFIXNODE_H
+#define
+
+class SuffixNode {
+ public:
+ private:
+};
+
+#endif
